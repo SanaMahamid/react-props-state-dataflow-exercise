@@ -4,9 +4,8 @@ import Item from './Item';
 class Home extends Component {
 
     render() {
-        return
-        {/* your code here */ }
-
+        return this.props.data.map((item, index) => <Item key={index} item={item} 
+        shouldDiscount={this.props.shouldDiscount}/>)
     }
 }
 
